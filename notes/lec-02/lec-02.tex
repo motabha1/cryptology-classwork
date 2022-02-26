@@ -1,0 +1,84 @@
+\documentclass[14pt]{article}
+\usepackage{fullpage,enumitem,amsmath,amssymb,titlesec, xcolor, amsthm}
+\titleformat*{\section}{\Large\bfseries}
+\titlespacing*{\section}{-2em}{*2}{*0}
+\titleformat*{\subsection}{\bfseries}
+\usepackage{indentfirst}
+\setlength\parindent{24pt}
+
+\newtheorem{defn}{Definition}[section]
+\newtheorem{coro}{Corollary}
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+	\title{\Huge \textbf{Lecture - 2}} 
+	\author{Rachit Parikh}
+	\date{February 24, 2022}
+	\maketitle
+	
+	\noindent
+	\rule{\linewidth}{0.4pt}
+	
+	\section{Cryptography}
+		\noindent
+		\linebreak
+		What are the uses of cryptography?
+		\begin{itemize}
+			\item Digital Signatures
+			\item Secure communication
+			\item Integrity
+		\end{itemize}
+	
+	\section{Encryption}
+		\noindent
+		\linebreak
+		$\mathbb{K}$ - Key space\\
+		$\mathbb{M}$ - Message space\\
+		$\mathbb{C}$ - Ciphertext space\\
+		$Enc(k, m)$ - Encryption function\\
+		$Dec(k, c)$ - Decryption function\\
+		
+		\subsection{Correctness Property}
+			\noindent
+			$Dec(k, Enc(k, m_0)) = m_0$
+			
+		
+		\subsection{Perfect Secrecy}
+			\noindent
+			If Bob and Alice are communicating and Eve is eavesdropping, then we have to ensure that she cannot guess the message. Since she can always guess out of message space, we have to make it the worst case. Basically she should not be able to do better than guessing randomly.\\
+			
+			
+			\noindent
+			First of all we begin with some notation before going to mathematical representation of definition of perfect secrecy.\\
+			\linebreak
+			$Eve(Enc(k, m_0)) = m_0 \rightarrow$ It means that Eve is able to guess the message correctly by looking at the encryption. This is sort of an event or an indicator random variable.\\
+			\newpage
+			$$X = [Eve(Enc(k, m_0)) = m_b], \text{ where}$$
+			\linebreak
+			$X = 1,$ if $b = 0$\\
+			$X = 0,$ if $b \neq 0$\\
+			\linebreak
+			We can now formalize definition of perfect secrecy,\\
+			\begin{defn}[Perfect Secrecy]
+				\label{def}
+				\item $m_0 \xleftarrow{R} \mathbb{M}\quad \implies \quad \Pr [X = 1] \leq \dfrac{1}{| \mathbb{M} |}$\\
+				\linebreak
+				Here, $m_0$ is selected uniformly from the message space $\mathbb{M}$. By this assumption, every message is equally likely so the best Eve can do is choose a message randomly and hence the above equation should hold if we want our encryption scheme to be \underline{perfectly secret}.\\
+			\end{defn}
+			\begin{coro}
+				\label{coro}
+				\item $b \xleftarrow{R} \{0, 1\} \quad \implies \quad \Pr [Eve(Enc(m_b, k)) = m_b] \leq \dfrac{1}{2}$
+			\end{coro}
+			\noindent
+			Here, Eve cannot predict $m_0/m_1$ by seeing $Enc(m_1, k)$ or $Enc(m_0, k)$\\
+			\linebreak
+			Since the definition$\implies$corollary, we can also check whether the converse is true. Surprisingly, it is true and can be proven by considering contradiction. To prove Corollary$\implies$Definition, we can just prove that $\neg$Definition$\implies$$\neg$Corollary. 
+			
+			\begin{theorem} 
+				Corollary 1$\implies$Definition 2.1
+			\end{theorem}
+			\begin{proof}
+				
+			\end{proof}
+ 		
+\end{document}
