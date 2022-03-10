@@ -4,29 +4,26 @@
 #include<string.h>
 
 
-// Taking key as 8 bytes 
+// Taking key as 16 bytes 
 
-int s[256], k[8];
+int s[256], k[16];
+int rout = 2;
+int z[2];
 
 void swap(int *x, int *y){
-    *x = *x + *y;
-    *y = *x - *y;
-    *x = *x - *y;
+    int z = *x;
+    *x = *y;
+    *y = z;
 }
 
-int find_ith_bit(int k, int i){
-    int t = 1 << i;
-    return t & k != 0;
-}
-
-void initiate_premutation(){
+void initiate_permutation(){
     for(int i=0; i<256; i++){
         s[i] = i;
     }
 }
 
 void initiate_key(){
-    for(int i=0; i<8; i++){
+    for(int i=0; i<16; i++){
         k[i] = rand() % 256;
     }
 }
@@ -34,36 +31,40 @@ void initiate_key(){
 void generate_permutation(){
     int j = 0;
     for(int i=0; i<256; i++){
-        j = (j + s[i] + k[i%8]) % 256;
+        j = (j + s[i] + k[i%16]) % 256;
         swap(&s[i], &s[j]);
     }
 }
 
 
 void key_schedule(){
-    initiate_premutation();
+    initiate_permutation();
     initiate_key();
     generate_permutation();
 }
 
-int run_routine(int i, int j){
-    swap(&s[i], &s[j]);
-    return s[(s[i] + s[j])%256];
+void run_routine(){
+    int i = 0, j = 0;
+    while(rout--){
+        i = i+1;
+        j = (j + s[i]) % 256;
+        swap(&s[i], &s[j]);
+        int t = (s[i] + s[j]) % 256;
+        z[1-rout] = s[t];
+    }
 }
 
 int main(){
     FILE *fptr;
     fptr = fopen("z1_z2.txt", "w");
-    int z1, z2;
     int Z1[256], Z2[256];
     memset(Z1, 0, sizeof(Z1));
     memset(Z2, 0, sizeof(Z2));
     for(int i=0; i<65536; i++){
         key_schedule();
-        z1 = run_routine(1, s[1]);
-        z2 = run_routine(2, (s[1] + s[2])%256);
-        //fprintf(fptr, "%d ----  %d\n", z1, z2);
-        Z1[z1]++; Z2[z2]++;
+        rout = 2;
+        run_routine();
+        Z1[z[0]]++; Z2[z[1]]++;
     }
     fprintf(fptr, "s,z1,z2\n");
     for(int i=0; i<256; i++){
