@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.11)  26 FEB 2022 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.11)  28 FEB 2022 13:48
 entering extended mode
 **./lec-02.tex
 (lec-02.tex
@@ -163,20 +163,20 @@ LaTeX Warning: Unused global option(s):
 (lec-02.aux)
 \openout1 = `lec-02.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
  (D:\Mitex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count274
@@ -191,97 +191,104 @@ LaTeX Font Info:    ... okay on input line 13.
 \makeMPintoPDFobject=\count279
 \everyMPtoPDFconversion=\toks31
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 
  (D:\Mitex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 
  (D:\Mitex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 23--27
+Underfull \hbox (badness 10000) in paragraph at lines 27--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--40
+Underfull \hbox (badness 10000) in paragraph at lines 37--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--40
+Underfull \hbox (badness 10000) in paragraph at lines 37--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
 
  []
 
 [1
 
 {C:/Users/Rancho/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 56--62
+Underfull \hbox (badness 10000) in paragraph at lines 60--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--62
+Underfull \hbox (badness 10000) in paragraph at lines 60--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--62
+Underfull \hbox (badness 10000) in paragraph at lines 60--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--67
+Underfull \hbox (badness 10000) in paragraph at lines 68--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--67
+Underfull \hbox (badness 10000) in paragraph at lines 68--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--76
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
-[2] (lec-02.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+[2] [3] (lec-02.aux) ) 
 Here is how much of TeX's memory you used:
- 3289 strings out of 478864
- 42420 string characters out of 2865613
- 350880 words of memory out of 3000000
- 21208 multiletter control sequences out of 15000+600000
+ 3293 strings out of 478864
+ 42436 string characters out of 2865613
+ 355922 words of memory out of 3000000
+ 21212 multiletter control sequences out of 15000+600000
  412273 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,12n,66p,311b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Rancho\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
-en/ec/dpi600\tcrm1000.pk><D:/Mitex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D
-:/Mitex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Mitex/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb><D:/Mitex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/M
-itex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Mitex/fonts/type1/public/amsf
-onts/cm/cmr12.pfb><D:/Mitex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Mitex/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Mitex/fonts/type1/public/amsfonts/
-cm/cmti10.pfb><D:/Mitex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lec-02.pdf (2 pages, 125328 bytes).
+ <C:\Users\Rancho\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
+nappen/ec/dpi600\tcrm1000.pk><D:/Mitex/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b><D:/Mitex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Mitex/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb><D:/Mitex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+D:/Mitex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Mitex/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><D:/Mitex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Mit
+ex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Mitex/fonts/type1/public/amsfo
+nts/cm/cmsy7.pfb><D:/Mitex/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Mitex/
+fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/Mitex/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb>
+Output written on lec-02.pdf (3 pages, 146536 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

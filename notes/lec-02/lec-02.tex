@@ -10,6 +10,10 @@
 \newtheorem{coro}{Corollary}
 \newtheorem{theorem}{Theorem}
 
+\DeclareRobustCommand{\bbone}{\text{\usefont{U}{bbold}{m}{n}1}}
+
+\DeclareMathOperator{\EX}{\mathbb{E}}
+
 \begin{document}
 	\title{\Huge \textbf{Lecture - 2}} 
 	\author{Rachit Parikh}
@@ -78,6 +82,22 @@
 				Corollary 1$\implies$Definition 2.1
 			\end{theorem}
 			\begin{proof}
+				Since we are proving it by contradiction, we just need to show that $\neg$Definition$\implies$$\neg$Corollary. First, we assume $\neg$Definition.\\
+				$$\Pr [Eve(Enc(m_1, k)) = m_1] > \dfrac{1}{|\mathbb{M}|}$$
+				Here $m_1$ is chosen randomly from the message space. Since this is an indicator random variable, we have
+				$$\EX[Eve(Enc(m_1, k)) = m_1] > \dfrac{1}{|\mathbb{M}|}$$
+				If we fix $m_0$, and our only randomness is $k \in \mathbb{K}$, then the probability that $m' = m_1$ can be given as 
+				$$\Pr [Eve(Enc(m_0, k)) = m'] \leq \dfrac{1}{|\mathbb{M}|}$$
+				This happens because $m_1$ is randomly chosen from the message space and the probability of it to be equal to $m'$ is at most $\dfrac{1}{|\mathbb{M}|}$
+				$$\therefore \EX [Eve(Enc(m_0, k)) = m_1] \leq \dfrac{1}{|\mathbb{M}|}$$
+				Now, if we take the difference of the random variables,
+				
+				$$\EX[Eve(Enc(m_1, k)) = m_1] - \EX [Eve(Enc(m_0, k)) = m_1] > 0$$
+				This means that the probability of Eve guessing a random $m_1$ given $m_1$ is higher than Eve guessing it from some $m_0$. Hence, for some $m_1$, we have
+				$$\Pr[Eve(Enc(m_1, k)) = m_1] > \Pr [Eve(Enc(m_0, k)) = m_1]$$
+				Hence in the message space $b \xleftarrow{R} \{0, 1\}$,
+				$$\Pr[Eve(Enc(m_b, k)) = m_b] > \dfrac{1}{2}$$
+				Hence, we have proved $\neg$Corollary 1.
 				
 			\end{proof}
  		
