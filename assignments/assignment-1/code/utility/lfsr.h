@@ -28,3 +28,12 @@ int get_new_state(int state, int poly, int n){
     }
     return state;
 }   
+
+int get_removed_bit(int state, int n){
+    int st[n];
+    for(int i=0; i<n; i++){
+        st[i] = state % 2;
+        state/=2; 
+    }
+    return st[n-1];
+}

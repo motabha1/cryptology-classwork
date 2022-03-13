@@ -4,7 +4,9 @@ All the updates of material related to the coursework Cryptology will be publish
 
 ## Assignments
 
-- **Assignment - 1** : [Link](https://github.com/motabha1/cryptology-classwork/tree/main/assignments/assignment-1)
+- **Assignment - 1** : [Assignment](https://github.com/motabha1/cryptology-classwork/tree/main/assignments/assignment-1), [Code](https://github.com/motabha1/cryptology-classwork/tree/main/assignments/assignment-1/code)
+
+- **Assignment - 2** : [Code](https://github.com/motabha1/cryptology-classwork/tree/main/assignments/assignment-2)
 
 
 ## Notes
