@@ -56,11 +56,11 @@ void run_routine(){
 
 int main(){
     FILE *fptr;
-    fptr = fopen("z1_z2.txt", "w");
-    int Z1[256], Z2[256];
+    fptr = fopen("z2.txt", "w");
+    long long Z1[256], Z2[256];
     memset(Z1, 0, sizeof(Z1));
     memset(Z2, 0, sizeof(Z2));
-    for(int i=0; i<65536; i++){
+    for(long long i=0; i<65536*256; i++){
         key_schedule();
         rout = 2;
         run_routine();
@@ -68,7 +68,7 @@ int main(){
     }
     fprintf(fptr, "s,z1,z2\n");
     for(int i=0; i<256; i++){
-        fprintf(fptr, "%d,%f,%f\n", i, Z1[i]/65536.0, Z2[i]/65536.0);
+        fprintf(fptr, "%d,%lld\n", i, Z2[i]);
     }
     fclose(fptr);
 }
